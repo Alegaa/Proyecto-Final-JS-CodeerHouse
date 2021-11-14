@@ -44,7 +44,7 @@
        
        
         <!-- MODAL CARRITO -->
-        <button onclick="document.getElementById('boton-carrito').style.display='block'">CARRITO <span id="contadorCarrito">0</span></button>
+        <button onclick="document.getElementById('boton-carrito').style.display='block'" class="btnCarrito">CARRITO <span id="contadorCarrito">0</span></button>
         <div id="boton-carrito" class="modal">
             <span onclick="document.getElementById('boton-carrito').style.display='none'" class="close" title="Close Modal">&times;</span>
             <form class="modal-content" action="/action_page.php">
@@ -52,7 +52,6 @@
                 <div id="container-carrito"></div>
                 <div><p class="precioProducto">Precio total: $<span id="precioTotal"></span></p></div>
                 <div class="clearfix">
-                  <button type="button" class="cancelbtn" onclick=cancelarCompra()>Cancelar Compra</button>
                   <button type="button" class="buybtn" onclick=finalizarCompra()>Comprar</button>
                 </div>
               </div>
