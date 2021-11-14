@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script src="https://kit.fontawesome.com/a01dc1d472.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!--Style own-->
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/modalStyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/jQuery.min.js"></script>
+    <title>NunZia</title>
+</head>
+<body>
+    <nav>
+      <!-- MODAL USUARIO -->
+      <div class="usuario" id="abrirModal"><i class="fas fa-user" ></i></div>
+        <div class="modal-container">
+           <div class="Modal">
+             <h2>INICIAR SESIÓN</h2>
+             <div>
+               <form>
+                 <input type="mail" placeholder="email">
+                 <input type="password" placeholder="password">
+               </form>
+             </div>
+             <div><button class="btnUsuario">INGRESAR</button></div>
+             <div><button class="btnUsuario"><a href="./recuperar.html">¿OLVIDASTE TU CONTRASEÑA?</a></button></div>
+            <div><button class="btnUsuario"><a href="./Registrarse.html">REGISTRARTE</a></button></div>
+            <span id="cerrarModal"><i class="fas fa-times-circle"></i></span>
+          </div>
+        </div>  
+        <!-- IMAGEN-LOGO -->
+        <img class="logo" src="./Images/Nunzia.png" alt="LogoNunzia">
+       
+       
+        <!-- MODAL CARRITO -->
+        <button onclick="document.getElementById('boton-carrito').style.display='block'">CARRITO <span id="contadorCarrito">0</span></button>
+        <div id="boton-carrito" class="modal">
+            <span onclick="document.getElementById('boton-carrito').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <div id="container-carrito"></div>
+                <div><p class="precioProducto">Precio total: $<span id="precioTotal"></span></p></div>
+                <div class="clearfix">
+                  <button type="button" class="cancelbtn" onclick=cancelarCompra()>Cancelar Compra</button>
+                  <button type="button" class="buybtn" onclick=finalizarCompra()>Comprar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+    </nav>
+    <main>
+              <h1>Tienda Online</h1>
+        <section id="container-productos" class="containerProduct"></section>
+    </main>
+       <footer id="footer"></footer>
+    <script src="./Json/productos.json"></script>
+    <script src="./js/App.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

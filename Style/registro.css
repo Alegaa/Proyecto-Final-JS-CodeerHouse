@@ -1,0 +1,48 @@
+form {
+  box-sizing: border-box;
+  width: 400px;
+  margin: auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: rgba(238, 238, 238, 0.37);
+  border-radius: 15px;
+}
+label {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(8, 7, 7, 0.616);
+}
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 8px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+button:hover {
+  background-color: rgb(230,205,174);
+  color: rgb(255, 255, 255);
+}
+p {
+   font-family: 'Roboto', sans-serif;
+   margin: auto;
+   text-align: center;
+}
+@media only screen and ( max-width:425px){
+  form{
+        width:100%;
+    }
+}

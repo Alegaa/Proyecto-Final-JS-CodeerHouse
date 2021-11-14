@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "img": "./Images/Tartas/brownie.jpg",
+    "nombre": "Brownie",
+    "precio": 2500,
+    "cantidad": 1
+  },
+  {
+    "id": 2,
+    "img": "./Images/Tartas/carrotcake.jpg",
+    "nombre": "Carrot Cake",
+    "precio": 2500,
+    "cantidad": 1
+  },
+  {
+    "id": 3,
+    "img": "./Images/Tartas/cheesecake.jpg",
+    "nombre": "Cheese cake",
+    "precio": 2500,
+    "cantidad": 1
+  },
+  {
+    "id": 4,
+    "img": "./Images/Tartas/Cocoydll.jpg",
+    "nombre": "Coco y Dulce de Leche",
+    "precio": 2500,
+    "cantidad": 1
+  },
+  {
+    "id": 5,
+    "img": "./Images/Tartas/keylimepie.jpg",
+    "nombre": "Key Lime Pie",
+    "precio": 2500,
+    "cantidad": 1
+  },
+  {
+   "id": 6,
+   "img": "./Images/Tartas/pasfrola.jpg",
+   "nombre": "Pastafrola",
+   "precio": 2500,
+   "cantidad": 1
+  },
+  {
+    "id": 7,
+    "img": "./Images/Tartas/rogel.jpg",
+    "nombre": "Rogel",
+    "precio": 2500,
+    "cantidad": 1
+  }
+]
